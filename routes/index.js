@@ -71,6 +71,10 @@ module.exports = function(app) {
     res.render('bod.ejs');
   });
 
+  app.get('/promo', async function(req, res) {
+    res.render('promo.ejs');
+  });
+
   app.post('/check-coverage', async function(req, res) { // belum ************
     res.json()
   });
