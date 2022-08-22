@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head', {page: 'Halaman Tidak Ditemukan'}); %>
+</head>
+
+<body>
+
+<%- include('./partials/loading'); %>
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition simple-sub-page">
+    <%- include('./partials/navigation', {color: 'dark'}); %>
+  </div>
+
+
+  <div class="bg-default-2 mx-md-15 mx-5 py-20 mb-10 mt-24">
+    <div class="container text-center">
+      <i class="fas fa-bug mb-10 text-danger" style="font-size: 100px"></i>
+      <h1 class="coodiv-text-3 font-weight-bold">Halaman tidak ditemukan</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="coodiv-text-9">Halaman yang kamu cari tidak tersedia atau sedang dalam perbaikan. Periksa kembali URL yang kamu masukan.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <%- include('./partials/banner'); %>
+  <%- include('./partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+
+  <!-- seconde style additionel JavaScript -->
+  <script src="js/particles-code.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/smoothscroll.js"></script>
+</body>
+
+</html>

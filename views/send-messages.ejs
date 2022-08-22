@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head', {page: 'Kontak'}); %>
+</head>
+
+<body>
+
+  <%- include('./partials/loading'); %>
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column subpages-header moon-edition">
+    <div class="bg_overlay_header">
+      <div id="particles-bg"></div>
+      <div class="cloud-bg"></div>
+    </div>
+    <!-- Fixed navbar -->
+    <%- include('./partials/navigation', {color: 'white'}); %>
+
+    <main class="container mt-25">
+      <div class="row">
+        <div class="col-md-5 pt-15">
+          <span class="main-header-top-title">Kamu punya pertanyaan?</span>
+          <h3 class="mt-3 contact-us-hero-title coodiv-text-3 text-white">Dapatkan informasi lebih banyak</h3>
+        </div>
+
+        <div class="col-md-7">
+          <form class="row form-contain-home contact-page-form-send" id="ajax-messages" method="post" action="/send-messages">
+            <h5>Kirim Pesan <span>Kami akan segera membalas pesan melalui email atau contact yang tercantum.</span></h5>
+            <div id="form-messages"></div>
+
+            <div class="col-md-12">
+              <div class="field input-field">
+                <input class="form-contain-home-input" type="text" id="name" name="name" placeholder="Nama Lengkap" required="">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="field input-field">
+                <input class="form-contain-home-input" type="text" id="phone" name="phone" placeholder="Nomor Telepon" required="">
+                <i class="fas fa-phone"></i>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="field input-field">
+                <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="Alamat Email" required="">
+                <i class="far fa-envelope"></i>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="field input-field">
+                <input class="form-contain-home-input" type="text" id="title" name="title" placeholder="Judul Pesan" required="">
+                <i class="fas fa-chat"></i>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="field input-field">
+                <textarea class="form-contain-home-input" id="message" name="message" placeholder="Isi Pesan" required=""></textarea>
+              </div>
+            </div>
+
+            <div class="btn-holder-contect">
+              <button type="submit">Kirim</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+
+  <div id="mobile-form-contact-height"></div>
+  <section class="padding-20-0 mob-display-none" style="min-height: 400px">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-5">
+          <h5 class="immediate-help-center-title">Atau hubungi Deka melalui <br> Whatsapp atau Email?</h5>
+          <br>
+          <a class="immediate-help-center-link" href="https://api.whatsapp.com/send/?phone=6285173114211"><i class="fab fa-whatsapp"></i> 0851 7311 4211</a>
+          <a class="immediate-help-center-link" href="mailto: support@deka.net.id"><i class="fas fa-at"></i> support@deka.net.id</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-5 pb-25 position-relative">
+    <div class="container">
+
+      <div class="row justify-content-center mr-tp-80">
+        <div id="nav-tabContent" class="col-md-9 tab-content">
+
+          <div class="tab-pane fade show active" id="nav-first-help-categorie" role="tabpanel" aria-labelledby="nav-first-help-categorie-tab">
+            <span class="help-center-box-popular">Dapatkan informasi</span>
+
+            <div class="help-center-box-item">
+              <div class="help-center-box-icon">
+                <i class="fas fa-server"></i>
+              </div>
+
+              <div class="help-center-box-text">
+                <span>Informasi Jaringan </span>
+                <span>Dapatkan informasi gangguan dan juga perbaikan terkini.</span>
+              </div>
+              <a class="help-center-box-link" href="/server-info"><i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <div class="help-center-box-item">
+              <div class="help-center-box-icon">
+                <i class="fas fa-question-circle"></i>
+              </div>
+
+              <div class="help-center-box-text">
+                <span>Pertanyaan Umum </span>
+                <span>Pertanyaan umum yang sering ditanyakan. Coba lihat, apakah pertanyaan kamu ada disana?</span>
+              </div>
+              <a class="help-center-box-link" href="/asked"><i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <div class="help-center-box-item">
+              <div class="help-center-box-icon">
+                <i class="fas fa-cash-register"></i>
+              </div>
+
+              <div class="help-center-box-text">
+                <span>Cara Pembayaran </span>
+                <span>Bingung bagaimana cara pembayaran? Lihat beberapa pilihan cara pembayaran yang Deka sediakan.</span>
+              </div>
+              <a class="help-center-box-link" href="/confirm-payment"><i class="fas fa-angle-right"></i></a>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="nav-second-help-categorie" aria-labelledby="nav-second-help-categorie-tab">
+            <h5 class="no-cat-error">there is no categories here <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stAndard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></h5>
+          </div>
+
+          <div class="tab-pane fade" id="nav-third-help-categorie">
+            <h5 class="no-cat-error">there is no categories here <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stAndard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span></h5>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <%- include('./partials/banner'); %>
+  <%- include('./partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+  <!-- ajax mailer -->
+  <script src="/js/mailer.js"></script>
+  <!-- seconde style additionel JavaScript -->
+  <script src="/js/particles-code.js"></script>
+  <script src="/js/particles.js"></script>
+  <script src="/js/smoothscroll.js"></script>
+</body>
+</html>

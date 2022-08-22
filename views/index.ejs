@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head', {page: 'Beranda'}); %>
+</head>
+
+<body>
+  <%- include('partials/loading'); %>
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition homepage">
+    <!-- start header -->
+    <div class="bg_overlay_header">
+      <div id="particles-bg"></div>
+      <div class="cloud-bg"></div>
+      <div class="bg-img-header-cloud">&nbsp;</div>
+      <div class="bg-img-header-rocket">
+        <img src="../img/images/rocket.svg" alt="">
+      </div>
+      <span class="header-shapes shape-03"></span>
+    </div>
+    <!-- Fixed navbar -->
+    <%- include('partials/navigation', {color: 'white'}); %>
+
+    <main class="container d-flex align-items-center h-100">
+      <div class="carousel carousel-main w-100">
+        <div class="carousel-cell">
+          <div class="row justify-content-start">
+            <div class="col-lg-8 col-12 white-text">
+              <span class="main-header-top-title">HOPE</span>
+              <h3 class="main-header-title coodiv-text-3">Untuk kamu yang butuh internet cepat dengan harga terjangkau</h3>
+              <p class="main-header-sub-title coodiv-text-10 font-weight-light mb-10">Harga dan kecepatan yang pas untuk menemani harimu</p>
+              <div class="d-flex"><a class="main-header-btn coodiv-text-9 font-weight-bold" href="/service/hope">PILIH LAYANAN<i class="fal fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="row justify-content-start">
+            <div class="col-lg-8 col-12 white-text">
+              <span class="main-header-top-title">CONNEX</span>
+              <h3 class="main-header-title coodiv-text-3">Streaming, Gaming, Browsing bahkan kerja di rumah jadi nyaman</h3>
+              <p class="main-header-sub-title coodiv-text-10 font-weight-light">Nikmati akses internet cepat bersama keluarga, teman atau rekan kerja</p>
+              <div class="d-flex"><a class="main-header-btn coodiv-text-9 font-weight-bold" href="/service/connex">PILIH LAYANAN<i class="fal fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="row justify-content-start">
+            <div class="col-lg-8 col-12 white-text">
+              <span class="main-header-top-title">DEDICATED</span>
+              <h3 class="main-header-title coodiv-text-3">Akses internet cepat untuk kamu yang tidak suka menunngu</h3>
+              <p class="main-header-sub-title coodiv-text-9 font-weight-light">Dukungan penuh dari team Deka untuk menjaga kualitas jaringan Anda</p>
+              <div class="d-flex"><a class="main-header-btn coodiv-text-9 font-weight-bold" href="/service/dedicated">BERLANGGANAN<i class="fal fa-arrow-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="main-header-carousel-container container">
+      <div class="row justify-content-start">
+        <div class="carousel carousel-nav">
+          <div class="carousel-cell">
+            <div class="main-header-carousel-nav">
+              <div class="main-header-carousel-nav-bg"></div>
+              <i class="fas fa-tachometer-slow"></i>
+              <h5 class="coodiv-text-9 font-weight-bold">HOPE</h5>
+              <p class="coodiv-text-12 font-weight-light">
+                Home, Office, Personal & Education. Layanan dari deka yang pas buat menemani aktivitas harianmu.
+              </p>
+              <ul>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>1 : 8</b> shared bandwidth</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>Private</b> dynamic IP</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>24 / 7</b> support</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>UNLIMITED</b> tanpa FUP</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="carousel-cell">
+            <div class="main-header-carousel-nav">
+              <div class="main-header-carousel-nav-bg"></div>
+              <i class="fas fa-tachometer-average"></i>
+              <h5 class="coodiv-text-9 font-weight-bold">CONNEX</h5>
+              <p class="coodiv-text-12 font-weight-light">
+                Tidak suka menunggu? Ingin akses iternet yang labih stabil dan cepat. Layanan satu ini mungkin cocok untuk kamu.
+              </p>
+              <ul>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>1 : 4</b> shared bandwidth</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>Private</b> dynamic IP</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>24 / 7</b> support</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>UNLIMITED</b> tanpa FUP</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="carousel-cell">
+            <div class="main-header-carousel-nav">
+              <div class="main-header-carousel-nav-bg"></div>
+              <i class="fas fa-tachometer-fast"></i>
+              <h5 class="coodiv-text-9 font-weight-bold">DEDICATED</h5>
+              <p class="coodiv-text-12 font-weight-light">
+                Kecepatan dapat dipilih sesuai kebutuhan. Garansi uptime dan banyak keunggulan lain yang kami tawarkan.
+              </p>
+              <ul>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>1 : 1</b> shared bandwidth</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>Public</b> static IP</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>24 / 7</b> priority ticket</li>
+                <li><i class="fal fa-check" aria-hidden="true"></i> <b>UNLIMITED</b> tanpa FUP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header -->
+
+  <section class="pt-20 pb-25">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-6 col-12 d-flex align-items-center">
+          <div class="content-text-author mb-md-0">
+            <h3 class="coodiv-text-4 font-weight-bold">Kualitas menjadi fokus dan prioritas kami</h3>
+            <p class="content_text_author_description_p">
+              Dengan dukungan dari teknisi berpengalaman dibidangnya kami selalu mengutamakan kualitas setiap layanan yang kami tawarkan.
+            </p>
+            <p class="content_text_author_description_p">
+              Tidak hanya kecepatan dan kestabilan akses internet, tapi juga kecepatan dan ketepatan dalam merespon setiap gangguan menjadi salah satu fokus kami.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div style="background-color: #fede48;" class="section_text_graphic_image">
+            <img src="img/images/img3.jpg" alt="" title="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-22">
+        <div class="col-md-6 col-12 d-flex align-items-center">
+          <div class="content-text-author mt-md-0">
+            <h3 class="coodiv-text-4 font-weight-bold">DEKA untuk Indonesia, untuk semua</h3>
+            <p class="content_text_author_description_p">
+              Layanan dari Deka saat ini berpusat di Yogyakarta. Namun dengan dukungan dari para mitra Deka, kami bertujuan untuk menghadirkan akses internet cepat ke seluruh Indonesia.
+            </p>
+            <p class="content_text_author_description_p">
+              Selain dengan media transmisi data menggunakan fiber optik, kami juga menyediakan jaringan melalui wireless sehingga jaringan kami lebih mudah hadir ke lokasi kamu.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div style="background-color: #ff5059;" class="section_text_graphic_image">
+            <img src="img/images/img2.jpg" alt="" title="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-22">
+        <div class="col-md-6 col-12 d-flex align-items-center">
+          <div class="content-text-author mb-md-0">
+            <h3 class="coodiv-text-4 font-weight-bold">Bergabung bersama kami, jadilah mitra DEKA</h3>
+            <p class="content_text_author_description_p">
+              Deka hadir untuk melayani kebutuhan digital kamu. Sehingga kami selalu terbuka untuk kalian yang ingin menjadi mitra Deka.
+            </p>
+            <p class="content_text_author_description_p">
+              Kami menawarkan berbagai bentuk kerja sama untuk kamu dan juga usahamu. Hubungi kami sekarang untuk menjadi mitra Deka.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div style="background-color: #56e7a5;" class="section_text_graphic_image">
+            <img src="img/images/img1.jpg" alt="" title="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-default-2">
+    <div class="container">
+      <h5 class="title-default-coodiv-two">Cukup 3 langkah mudah berlangganan</h5>
+
+      <div class="row justify-content-center mt-10">
+        <div class="col-md-4">
+          <div class="coodiv-feutres-black-version">
+            <i style="background: #88f6ec;" class="fas fa-mobile-alt"></i>
+            <div class="text">
+              <h5 class="coodiv-text-7 font-weight-bold mb-0">Hubungi Kami</h5>
+              <p class="coodiv-text-11 font-weight-light">
+                Kamu dapat menghubungi kami untuk menginformasilan lokasi, kontak dan jenis layanan yang dipilih.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="coodiv-feutres-black-version">
+            <i style="background: #79f9c0;" class="fas fa-map-marked-alt"></i>
+            <div class="text">
+              <h5 class="coodiv-text-7 font-weight-bold mb-0">Survei Lokasi</h5>
+              <p class="coodiv-text-11 font-weight-light">
+                Team Deka akan datang ke lokasi untuk mengetahui ketersedian jaringan dan kebutuhan perangkat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="coodiv-feutres-black-version">
+            <i style="background: #fede48;" class="fas fa-network-wired"></i>
+            <div class="text">
+              <h5 class="coodiv-text-7 font-weight-bold mb-0">Global data centers.</h5>
+              <p class="coodiv-text-11 font-weight-light">
+                Pemasangan jaringan internet akan dilakukan segera dan kamu dapat menikmati akses internet dari deka.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="pb-25 position-relative">
+    <div class="container">
+      <ul class="nav homepage-services-tab-titles mb-15" id="homepageservices" role="tablist">
+        <li><a id="hbasic-tab" data-toggle="tab" href="#hbasic" role="tab" aria-controls="hbasic" aria-selected="true">HOPE BASIC</a></li>
+        <li><a id="hsmart-tab" class="active" data-toggle="tab" href="#hsmart" role="tab" aria-controls="hsmart" aria-selected="false">HOPE SMART</a></li>
+        <li><a id="hconnex-tab" data-toggle="tab" href="#hconnex" role="tab" aria-controls="hconnex" aria-selected="false">CONNEX</a></li>
+      </ul>
+
+      <div class="tab-content" id="homepageservicesContent">
+        <div class="tab-pane fade" id="hbasic" role="tabpanel" aria-labelledby="hbasic-tab">
+          <h5 class="title-default-coodiv-two">Lebih Hemat Tanpa Sarat <span>Ngerjain tugas atau ngopi sore sambil dengerin musik</span></h5>
+
+          <div class="row justify-content-center">
+            <div id="monthly-yearly-chenge" class="mr-tp-40 style-two">
+              <a class="active monthly-price"> <span class="change-box-text">Bulanan</span> <span class="change-box"></span></a>
+              <a class="yearli-price"> <span class="change-box-text">Tahunan</span></a>
+            </div>
+          </div>
+
+          <div class="row justify-content-center second-pricing-table-container mr-tp-30">
+            <div class="col-md-4 px-0 m-2">
+              <div class="second-pricing-table">
+                <h5 class="second-pricing-table-title">
+                  HOPE Lite
+                  <span>
+                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-browser"></i>
+                    <i class="fas fa-music"></i>
+                  </span>
+                </h5>
+                <span class="second-pricing-table-price monthly">
+                  <i class="monthly">Rp.150.000<small> /bulan</small></i>
+                  <i class="yearly">Rp.1.650.000<small> /tahun</small></i>
+                </span>
+
+                <ul class="second-pricing-table-body">
+                  <li>Kecepatan Up To <strong>5 Mbps</strong></li>
+                  <li><strong>UNLIMITED</strong> bandwidth</li>
+                  <li><strong>Tanpa Kuota / FUP</strong></li>
+                  <li>Dukungan <strong>24/7</strong></li>
+                  <li><strong>Private</strong> IP Address</li>
+                  <li class="not-chacked">Perangkat Dipinjami</li>
+                </ul>
+
+                <ul class="second-pricing-table-body-features">
+                  <li>
+                    <span><strong>Rekomendasi Penggunaan</strong>Perorangan atau pribadi</span>
+                  </li>
+                  <li>
+                    <span>Belum termasuk biaya registrasi / instalasi</span>
+                  </li>
+                </ul>
+
+                <a class="second-pricing-table-button" href="/subscribe/hope-lite">Pilih Layanan</a>
+              </div>
+            </div>
+
+            <div class="col-md-4 px-0 m-2">
+              <div class="second-pricing-table">
+                <h5 class="second-pricing-table-title">
+                  HOPE Home
+                  <span>
+                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-browser"></i>
+                    <i class="fas fa-music"></i>
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                </h5>
+                <span class="second-pricing-table-price monthly">
+                  <i class="monthly">Rp.200.000<small> /bulan</small></i>
+                  <i class="yearly">Rp.2.200.000<small> /tahun</small></i>
+                </span>
+
+                <ul class="second-pricing-table-body">
+                  <li>Kecepatan Up To <strong>10 Mbps</strong></li>
+                  <li><strong>UNLIMITED</strong> bandwidth</li>
+                  <li><strong>Tanpa Kuota / FUP</strong></li>
+                  <li>Dukungan <strong>24/7</strong></li>
+                  <li><strong>Private</strong> IP Address</li>
+                  <li class="not-chacked">Perangkat Dipinjami</li>
+                </ul>
+
+                <ul class="second-pricing-table-body-features">
+                  <li>
+                    <span><strong>Rekomendasi Penggunaan</strong>Pribadi atau keluarga</span>
+                  </li>
+                  <li>
+                    <span>Belum termasuk biaya registrasi / instalasi</span>
+                  </li>
+                </ul>
+
+                <a class="second-pricing-table-button" href="/subscribe/hope-home">Pilih Layanan</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- end row -->
+        </div>
+
+        <div class="tab-pane fade show active" id="hsmart" role="tabpanel" aria-labelledby="hsmart-tab">
+          <h5 class="title-default-coodiv-two">Rame-rame tetep Oke <span>Streaming jadi lebih asik. Apalagi bareng temen</span></h5>
+
+          <div class="row justify-content-center">
+            <div id="monthly-yearly-chenge" class="mr-tp-40 style-two">
+              <a class="active monthly-price"> <span class="change-box-text">Bulanan</span> <span class="change-box"></span></a>
+              <a class="yearli-price"> <span class="change-box-text">Tahunan</span></a>
+            </div>
+          </div>
+
+          <div class="row justify-content-center second-pricing-table-container mr-tp-30">
+            <div class="col-md-4 px-0 m-2">
+              <div class="second-pricing-table">
+                <h5 class="second-pricing-table-title">
+                  Hope Play
+                  <span>
+                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-browser"></i>
+                    <i class="fas fa-music"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-gamepad"></i>
+                  </span>
+                </h5>
+                <span class="second-pricing-table-price monthly">
+                  <i class="monthly">Rp.250.000<small> /bulan</small></i>
+                  <i class="yearly">Rp.2.750.000<small> /tahun</small></i>
+                </span>
+
+                <ul class="second-pricing-table-body">
+                  <li>Kecepatan Up To <strong>15 Mbps</strong></li>
+                  <li><strong>UNLIMITED</strong> bandwidth</li>
+                  <li><strong>Tanpa Kuota / FUP</strong></li>
+                  <li>Dukungan <strong>24/7</strong></li>
+                  <li><strong>Private</strong> IP Address</li>
+                  <li>Perangkat Dipinjami</li>
+                </ul>
+
+                <ul class="second-pricing-table-body-features">
+                  <li>
+                    <span><strong>Rekomendasi Penggunaan</strong>Perorangan atau keluarga</span>
+                  </li>
+                  <li>
+                    <span>Belum termasuk biaya registrasi / instalasi</span>
+                  </li>
+                </ul>
+
+                <a class="second-pricing-table-button" href="/subscribe/hope-play">Pilih Layanan</a>
+              </div>
+            </div>
+
+            <div class="col-md-4 px-0 m-2">
+              <div class="second-pricing-table">
+                <h5 class="second-pricing-table-title">
+                  HOPE Office
+                  <span>
+                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-browser"></i>
+                    <i class="fas fa-music"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-gamepad"></i>
+                    <i class="fas fa-cloud-download"></i>
+                    <i class="fas fa-video"></i>
+                  </span>
+                </h5>
+                <span class="second-pricing-table-price monthly">
+                  <i class="monthly">Rp.300.000<small> /bulan</small></i>
+                  <i class="yearly">Rp.3.300.000<small> /tahun</small></i>
+                </span>
+
+                <ul class="second-pricing-table-body">
+                  <li>Kecepatan Up To <strong>20 Mbps</strong></li>
+                  <li><strong>UNLIMITED</strong> bandwidth</li>
+                  <li><strong>Tanpa Kuota / FUP</strong></li>
+                  <li>Dukungan <strong>24/7</strong></li>
+                  <li><strong>Private</strong> IP Address</li>
+                  <li>Perangkat Dipinjami</li>
+                </ul>
+
+                <ul class="second-pricing-table-body-features">
+                  <li>
+                    <span><strong>Rekomendasi Penggunaan</strong>Keluarga atau kantor sekala kecil</span>
+                  </li>
+                  <li>
+                    <span>Belum termasuk biaya registrasi / instalasi</span>
+                  </li>
+                </ul>
+
+                <a class="second-pricing-table-button" href="/subscribe/hope-office">Pilih Layanan</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- end row -->
+        </div>
+
+        <div class="tab-pane fade" id="hconnex" role="tabpanel" aria-labelledby="hconnex-tab">
+          <h5 class="title-default-coodiv-two">Lebih mudah melihat dunia<span>Tidak hanya gaming atau browsing. Akses internet yang tepat juga dibutuhkan dalam bekerja</span></h5>
+
+          <div class="row justify-content-start mt-15">
+            <div class="col-md-4 plan-ssl-special">
+              <h5 class="res-titl">CONNEX 20</h5>
+              <span class="res-price"><i>Rp.</i>500.000 <small>/bulan</small></span>
+              <span class="plan-discount">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-browser"></i>
+                <i class="fas fa-music"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-cloud-download"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-users"></i>
+                <i class="fas fa-share-alt"></i>
+              </span>
+
+              <div class="body-ress-v2">
+                <p>Kecepatan Up To <b>20 Mbps</b></p>
+                <p><b>UNLIMITED</b> bandwidth</p>
+                <p>Tanpa FUP</p>
+                <p>Dukungan <b>24/7</b></p>
+                <p><b>Prioritas</b> Tiket</p>
+                <p>Perangkat Dipinjami</p>
+                <p><b>Private</b> IP Address</p>
+                <p><s>Gratis Mikrotik Router</s></p>
+                <p><a class="ress-install-btn" href="/subscribe/connex-20">BERLANGGANAN</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4 plan-ssl-special">
+              <h5 class="res-titl">CONNEX 40</h5>
+              <span class="res-price"><i>Rp.</i>1.000.000 <small>/bulan</small></span>
+              <span class="plan-discount">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-browser"></i>
+                <i class="fas fa-music"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-cloud-download"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-users"></i>
+                <i class="fas fa-share-alt"></i>
+              </span>
+
+              <div class="body-ress-v2">
+                <p>Kecepatan Up To <b>40 Mbps</b></p>
+                <p><b>UNLIMITED</b> bandwidth</p>
+                <p>Tanpa FUP</p>
+                <p>Dukungan <b>24/7</b></p>
+                <p><b>Prioritas</b> Tiket</p>
+                <p>Perangkat Dipinjami</p>
+                <p><b>Private</b> IP Address</p>
+                <p><s>Gratis Mikrotik Router</s></p>
+                <p><a class="ress-install-btn" href="/subscribe/connex-40">BERLANGGANAN</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4 plan-ssl-special">
+              <h5 class="res-titl">CONNEX 60</h5>
+              <span class="res-price"><i>Rp.</i>1.500.000 <small>/bulan</small></span>
+              <span class="plan-discount">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-browser"></i>
+                <i class="fas fa-music"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fas fa-gamepad"></i>
+                <i class="fas fa-cloud-download"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-users"></i>
+                <i class="fas fa-share-alt"></i>
+              </span>
+
+              <div class="body-ress-v2">
+                <p>Kecepatan Up To <b>60 Mbps</b></p>
+                <p><b>UNLIMITED</b> bandwidth</p>
+                <p>Tanpa FUP</p>
+                <p>Dukungan <b>24/7</b></p>
+                <p><b>Prioritas</b> Tiket</p>
+                <p>Perangkat Dipinjami</p>
+                <p><b>Private</b> IP Address</p>
+                <p>Gratis Mikrotik Router</p>
+                <p><a class="ress-install-btn" href="/subscribe/connex-60">BERLANGGANAN</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </section>
+
+  <section class="py-25 border-top">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-8 col-12">
+          <div class="title-default-coodiv-four">
+            <p style="color: #079d63;" class="eyebrow content-text-author_eyebrow">Dari Deka, Untuk Kita</p>
+            <h5 class="coodiv-text-5 font-weight-bold">Ya, Deka disini untuk kamu.</h5>
+            <p class="coodiv-text-9">
+              Kami berusaha untuk terus dapat memenuhi kebutuhan digital kalian.
+              Tidak berhenti disini, layanan yang kami tawarkan akan semakin beragam dan pastinya dapat diAndalkan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="coodiv-features-box-black-color-carousel">
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #ff2934;" class="fas fa-house-signal"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">Hotspot Area</h5>
+            <p class="coodiv-text-11 mb-1">Hadirkan hotspot area di public area, sekolah atau ruang usaha kamu.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #ee9823;" class="fas fa-project-diagram"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">Local Loop</h5>
+            <p class="coodiv-text-11 mb-1">Hubungkan jaringan dari beberapa lokasi berbeda. Berbagi data dan pekerjaan jadi lebih mudah.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #2ab8ae;" class="fas fa-chart-network"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">VPN</h5>
+            <p class="coodiv-text-11 mb-1">Kantor cabang ada di luar kota bahkan luar negeri? Gunakan vpn agar dapat selalu terhubung.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #19d681;" class="fas fa-cctv"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">CCTV</h5>
+            <p class="coodiv-text-11 mb-1">Pasang CCTV ga pake repot. Tetap awasi rumah kamu, ga perlu khawatir saat liburan.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #a2fbf3;" class="fas fa-network-wired"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">Local Network</h5>
+            <p class="coodiv-text-11 mb-1">Serahkan perawatan, perbaikan atau pengembangan jaringan di kantor kamu pada Deka.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #a2fbf3;" class="fas fa-globe"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">Public IP Address</h5>
+            <p class="coodiv-text-11 mb-1">Deka menyediakan IP Publik yang dapat ditambahkan untuk semua pelanggan internet Deka.</p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="#" class="coodiv-features-box-black-color">
+            <i style="color: #a2fbf3;" class="fas fa-browser"></i>
+            <h5 class="coodiv-text-8 font-weight-bold mb-0">Website</h5>
+            <p class="coodiv-text-11 mb-1">Deka juga dapat membantu kamu untuk membuat website untuk semua jenis usaha mu.</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/banner'); %>
+  <%- include('partials/footer'); %>
+
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+  <!-- seconde style additionel JavaScript -->
+  <script src="/js/particles-code.js"></script>
+  <script src="/js/particles.js"></script>
+  <script src="/js/smoothscroll.js"></script>
+</body>
+</html>

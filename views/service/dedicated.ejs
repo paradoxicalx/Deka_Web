@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head', {page: 'DEDICATED'}); %>
+</head>
+
+<body><!-- start body -->
+
+  <%- include('../partials/loading'); %>
+  <!-- end preloader -->
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition services-page">
+    <span style="background-image: url(/img/images/earth.jpg);" class="services-page-bg-overflow full-width img-bg"></span>
+    <!-- Fixed navbar -->
+    <%- include('../partials/navigation', {color: 'white'}); %>
+
+    <main class="container pt-30">
+
+      <div class="row justify-content-start">
+        <div class="col-md-7 col-12 white-text">
+          <h3 class="main-header-title coodiv-text-3 font-weight-bold">Performa Dan Kapasitas Penuh Hanya Untuk Anda</h3>
+          <p class="text-white">
+            Dapatkan pengalaman penuh berinternet. Lebih bebas tanpa batas.
+            Memiliki bandwidth dan kapasitas penuh untuk Anda sehingga Anda tidak perlu khawatir dengan lalu lintas jaringan yang padat.
+
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-start mt-10 mb-15">
+
+        <div class="col-md-3 col-12 mb-md-0 mb-6">
+          <div class="games-server-features-header">
+            <i class="fad fa-chart-area"></i>
+            <h5 class="coodiv-text-9 font-weight-bold">MRTG Access</h5>
+            <p class="coodiv-text-11">Pantau trafik jaringan Anda secara real time dimana saja kapan saja</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mb-md-0 mb-6">
+          <div class="games-server-features-header">
+            <i class="fad fa-globe"></i>
+            <h5 class="coodiv-text-9 font-weight-bold">Public IP Address</h5>
+            <p class="coodiv-text-11">Alamat IP publik dengan banyak kegunaan khusus untuk Anda</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12 mb-md-0 mb-6">
+          <div class="games-server-features-header">
+            <i class="fad fa-user-headset"></i>
+            <h5 class="coodiv-text-9 font-weight-bold">Priority Ticket</h5>
+            <p class="coodiv-text-11">Penanganan gangguan lebih cepat dan uptime lebih terjamin</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-12">
+          <div class="games-server-features-header">
+            <i class="fad fa-infinity"></i>
+            <h5 class="coodiv-text-9 font-weight-bold">Flexibility</h5>
+            <p class="coodiv-text-11">Tentukan sendiri kapasitas atau kecepatan sesuai kebutuhan</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+
+  <section class="padding-100-0-0">
+    <div class="container">
+      <h5 class="title-default-coodiv-two mx-auto text-center mb-15">
+        Layanan Terbaik Dari Deka
+        <span>
+          Banyak keunggulan pada layanan Dedicated yang tidak bisa Anda dapatkan pada layanan lainnya.
+        </span>
+      </h5>
+    </div>
+    <div class="container">
+      <h5 class="title-default-coodiv-two mx-auto text-center mb-15">
+        Dukungan Penuh
+        <span>
+          Anda dapat menentukan dukungan yang dapat kami berikan. Kami akan berusaha yang terbaik untuk memenuhi harapan Anda.
+        </span>
+      </h5>
+    </div>
+  </section>
+
+  <section class="py-20 bg-default-2">
+    <div class="container">
+      <form class="row form-contain-home contact-page-form-send" id="ajax-dedicated" method="post" action="/send-messages">
+        <h5>Hubungi DEKA <span>Hubungi kami untuk mendapatkan penawaran dan infromasi layanan</span></h5>
+        <div id="form-messages"></div>
+
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="text" id="phone" name="phone" placeholder="Nomor Telepon" required>
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="Alamat Email" required="">
+            <i class="far fa-envelope"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="hidden" id="title" name="title" placeholder="Nama Lengkap" value="Informasi Layanan Dedicated">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <textarea class="form-contain-home-input" id="message" name="message" placeholder="Pesan" required=""></textarea>
+          </div>
+        </div>
+
+        <div class="btn-holder-contect">
+          <button type="submit">Kirim</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="py-25">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-6 col-12">
+          <div class="title-default-coodiv-four">
+            <h5 class="coodiv-text-5 font-weight-bold"><i class="fas fa-question-circle"></i> Informasi Layanan</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="faq-section-bredh" id="faq">
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqone">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Berapa biaya/harga layanan Dedicated?
+                </button>
+              </div>
+
+              <div id="collapseOne" class="faq-section-bredh-text collapse" aria-labelledby="faqone" data-parent="#faq">
+                <p>
+                  Anda dapat menghubungi kami untuk dapat mengetahui biaya registrasi dan abonemen bulanan layanan Dedicated.
+                  Biaya bulanan akan dihitung per 1 Mbps dan akan berbeda tergantung dari jumlah total kapasitas yang diambil.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqtwo">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                  Apakah terdapat minimal waktu berlanganan?
+                </button>
+              </div>
+
+              <div id="collapsetwo" class="faq-section-bredh-text collapse" aria-labelledby="faqtwo" data-parent="#faq">
+                <p>
+                  Deka tidak memberikan kontrak atau batas waktu minimal berlanganan, kecuali ada kerja sama atau kesepakatan berbeda pada saat awal berlanganan.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqtree">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapsetree" aria-expanded="false" aria-controls="collapsetree">
+                  Berapa batas minimal/maksimal berlanganan?
+                </button>
+              </div>
+
+              <div id="collapsetree" class="faq-section-bredh-text collapse" aria-labelledby="faqtree" data-parent="#faq">
+                <p>
+                  Untuk berlanganan layanan Dedicated, minimal berlanganan adalah 10 Mbps dan Deka tidak memberikan batas maksimal berlanganan.
+                  Batas kapasitas dapat berubah bila ada keterbatasan secara teknis atau ada kesepakatan lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('../partials/banner'); %>
+  <%- include('../partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+</body>
+
+</html>

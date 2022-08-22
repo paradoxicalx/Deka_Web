@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head', {page: 'Halaman Tidak Ditemukan'}); %>
+  <link rel="stylesheet" href="/css/leaflet.css">
+  <link rel="stylesheet" href="/css/Leaflet.PolylineMeasure.css" />
+  <link rel="stylesheet" href="/css/leaflet-elevation.css" />
+
+</head>
+
+<body>
+
+<%- include('./partials/loading'); %>
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition simple-sub-page">
+    <%- include('./partials/navigation', {color: 'dark'}); %>
+  </div>
+
+
+  <div class="mx-md-15 mx-5 mb-10 mt-24">
+    <form class="row form-contain-home contact-page-form-send" method="post" action="/check-coverage">
+      <div class="col-md-12 mb-5">
+        <label>Pilih Lokasi</label>
+        <div id="mapid" class="map-25"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="field input-field">
+          <input class="form-contain-home-input" type="text" id="address" name="address" placeholder="Alamat Lengkap" required="">
+          <input class="form-contain-home-input" type="hidden" id="location" name="location" required="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="field input-field">
+          <input class="form-contain-home-input" type="text" id="phone" name="phone" placeholder="Nomor Whatsapp" required="">
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <hr>
+        <div class="btn-holder-contect MT-5">
+          <button type="submit">LANJUTKAN</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <%- include('./partials/banner'); %>
+  <%- include('./partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/template-scripts.js"></script>
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/js/parallax.min.js"></script>
+  <script src="/js/mailchamp.js"></script>
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+
+  <script src="/js/leaflet.js"></script>
+  <script src="/js/leaflet-elevation.js"></script>
+  <script src="/js/geoutils.js"></script>
+  <script src="/js/Leaflet.PolylineMeasure.js"></script>
+
+  <script type="text/javascript">
+    var myIcon  = L.icon({
+      iconUrl: '/img/images/orange.png',
+      iconSize:     [30, 41],
+      iconAnchor:   [15, 41],
+      popupAnchor:  [0, -41]
+    });
+
+    var mymap = L.map('mapid').setView([-7.785827, 110.371706], 13);
+    var mapLayer = {
+      googleHybrid : L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+      })
+    }
+
+    var createLayer = mapLayer.googleHybrid.addTo(mymap);
+    var activeLayer = mapLayer.googleHybrid
+
+    navigator.geolocation.getCurrentPosition(function(location) {
+      var myLocation = new L.LatLng(location.coords.latitude, location.coords.longitude);
+      $('[name="location"]').val(myLocation.lat + ', ' +myLocation.lng)
+      mymap.setView(myLocation,14);
+      myloc = L.marker(myLocation, {icon : myIcon}).bindPopup('Lokasi Saya').addTo(mymap);
+    })
+
+    try {
+      myloc
+    } catch (e) {
+      var myLocation = new L.LatLng(-7.793196, 110.365834);
+      myloc = L.marker(myLocation, {icon : myIcon}).bindPopup('Lokasi Saya').addTo(mymap);
+    }
+
+    mymap.on('click', function(ev){
+      var latlng = mymap.mouseEventToLatLng(ev.originalEvent);
+      myloc.setLatLng([latlng.lat,latlng.lng]).update();
+      $('[name="location"]').val(latlng.lat + ', ' +latlng.lng)
+    });
+
+  </script>
+</body>
+
+</html>

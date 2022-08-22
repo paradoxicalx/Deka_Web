@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head', {page: 'Informasi'}); %>
+</head>
+
+<body><!-- start body -->
+  <%- include('./partials/loading'); %>
+  <!-- end preloader -->
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition simple-sub-page">
+    <%- include('./partials/navigation', {color: 'dark'}); %>
+  </div>
+
+
+  <section class="pt-25 position-relative">
+    <div class="container">
+
+      <div class="the_breadcrumb_conatiner_page">
+        <div class="the_breadcrumb">
+          <div class="breadcrumbs"><i class="fas fa-home"></i><a href="/">Deka</a>  / Informasi Jaringan </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 help-center-header">
+          <h5 class="help-center-title">Jadwal dan Informasi Jaringan</h5>
+          <p class="help-center-text">Berikut ini adalah information berkaitan dengan status jaringan Deka bulan Agustus 2022.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pb-20">
+    <div class="container">
+
+      <div class="time-line-status">
+
+        <div class="tt-time-status">
+          <div class="row justify-content-center">
+            <div class="col-md-2">
+              <span class="title-status error">GANGGUAN</span>
+            </div>
+            <div class="col-md-10">
+              <h5 class="title-status-h5">Gangguan Jaringan <span>Senin, 12 Agustus 2022</span></h5>
+              <p class="title-status-p mb-0 mt-8">Terjadi masalah kelistrikan pada salah satu BTS Deka. Berdampak pada terputusnya koneksi untuk beberapa pelanggan</p>
+              <hr>
+            </div>
+            <div class="status-div-optionel non">
+              <p><b>BTS</b> Perbaikan dan penambahan backup kelistrikan pada BTS terdampak. <span>Menunggu <i class="fa fa-circle-o-notch" aria-hidden="true"></i></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="tt-time-status">
+          <div class="row justify-content-center">
+            <div class="col-md-2">
+              <span class="title-status">PERBAIKAN</span>
+            </div>
+            <div class="col-md-10">
+              <h5 class="title-status-h5">Perawatan Jaringan <span>Minggu, 11 Agustus 2022</span></h5>
+              <p class="title-status-p mb-0 mt-8">Pekerjaan ini memiliki kemungkinan kecil untuk mengganggu koneksi internet pelanggan. </p>
+              <hr>
+            </div>
+            <div class="status-div-optionel chck">
+              <p><b>Server</b> Penggantian perangkat pada server utama Deka. <span>Selesai <i class="fa fa-circle-o-notch" aria-hidden="true"></i></span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <%- include('./partials/banner'); %>
+  <%- include('./partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+</body>
+
+</html>
