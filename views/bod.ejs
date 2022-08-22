@@ -2,34 +2,160 @@
 <html lang="en">
 
 <head>
-  <%- include('./partials/head', {page: 'Kebijakan Privasi'}); %>
+  <%- include('./partials/head', {page: 'DEDICATED'}); %>
 </head>
 
-<body>
+<body><!-- start body -->
+
   <%- include('./partials/loading'); %>
+  <!-- end preloader -->
 
-  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition simple-sub-page">
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition services-page">
+    <span style="background-image: url(/img/images/hand-wifi.jpg);" class="services-page-bg-overflow full-width img-bg"></span>
+    <!-- Fixed navbar -->
     <%- include('./partials/navigation', {color: 'dark'}); %>
-  </div>
 
+    <main class="container pt-30">
 
-  <section class="pb-25 pt-20 position-relative">
-    <div class="container">
-
-      <div class="the_breadcrumb_conatiner_page">
-        <div class="the_breadcrumb">
-          <div class="breadcrumbs"><i class="fas fa-home"></i><a href="/">Deka</a> / Bandwidth on Demand </div>
+      <div class="row justify-content-start" style="min-height: 300px;">
+        <div class="col-md-7 col-12 p-10">
+          <h3 class="main-header-title coodiv-text-3 font-weight-bold text-dark">Bandwidth </h3>
+          <h3 class="main-header-title coodiv-text-3 font-weight-bold text-dark">On Demand</h3>
+          <p>Terhubung Kapan Saja, Dimana Saja</p>
         </div>
       </div>
 
+    </main>
+
+  </div>
 
 
+  <section class="py-25 ">
+    <div class="container">
+      <div class="col-md-12 col-12 d-flex align-items-center">
+        <div class="content-text-author mb-md-0 mb-14">
+          <h3 class="coodiv-text-4 font-weight-bold">Apa itu BOD?</h3>
+          <p class="content_text_author_description_p">
+            BOD atau Bandwidth On Demand adalah layanan akses internet dari DEKA yang sangat fleksible.
+            Bisa juga disebut layanan akses internet sementara, dimana penggunaan dari layanan ini hanya terbatas untuk waktu tertentu saja.
+          </p>
+        </div>
+      </div>
     </div>
+    <!-- <div class="container">
+      <h5 class="title-default-coodiv-two mx-auto text-center mb-15">
+        Dukungan Penuh
+        <span>
+          Anda dapat menentukan dukungan yang dapat kami berikan. Kami akan berusaha yang terbaik untuk memenuhi harapan Anda.
+        </span>
+      </h5>
+    </div> -->
   </section>
+
+  <!-- <section class="py-20 bg-default-2">
+    <div class="container">
+      <form class="row form-contain-home contact-page-form-send" id="ajax-dedicated" method="post" action="/send-messages">
+        <h5>Hubungi DEKA <span>Hubungi kami untuk mendapatkan penawaran dan infromasi layanan</span></h5>
+        <div id="form-messages"></div>
+
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="text" id="phone" name="phone" placeholder="Nomor Telepon" required>
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="email" id="email" name="email" placeholder="Alamat Email" required="">
+            <i class="far fa-envelope"></i>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <input class="form-contain-home-input" type="hidden" id="title" name="title" placeholder="Nama Lengkap" value="Informasi Layanan Dedicated">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="field input-field">
+            <textarea class="form-contain-home-input" id="message" name="message" placeholder="Pesan" required=""></textarea>
+          </div>
+        </div>
+
+        <div class="btn-holder-contect">
+          <button type="submit">Kirim</button>
+        </div>
+
+      </form>
+    </div>
+  </section> -->
+
+  <!-- <section class="py-25">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-6 col-12">
+          <div class="title-default-coodiv-four">
+            <h5 class="coodiv-text-5 font-weight-bold"><i class="fas fa-question-circle"></i> Informasi Layanan</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="faq-section-bredh" id="faq">
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqone">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Berapa biaya/harga layanan Dedicated?
+                </button>
+              </div>
+
+              <div id="collapseOne" class="faq-section-bredh-text collapse" aria-labelledby="faqone" data-parent="#faq">
+                <p>
+                  Anda dapat menghubungi kami untuk dapat mengetahui biaya registrasi dan abonemen bulanan layanan Dedicated.
+                  Biaya bulanan akan dihitung per 1 Mbps dan akan berbeda tergantung dari jumlah total kapasitas yang diambil.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqtwo">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                  Apakah terdapat minimal waktu berlanganan?
+                </button>
+              </div>
+
+              <div id="collapsetwo" class="faq-section-bredh-text collapse" aria-labelledby="faqtwo" data-parent="#faq">
+                <p>
+                  Deka tidak memberikan kontrak atau batas waktu minimal berlanganan, kecuali ada kerja sama atau kesepakatan berbeda pada saat awal berlanganan.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-section-bredh-section">
+              <div class="" id="faqtree">
+                <button class="faq-section-bredh-title" data-toggle="collapse" data-target="#collapsetree" aria-expanded="false" aria-controls="collapsetree">
+                  Berapa batas minimal/maksimal berlanganan?
+                </button>
+              </div>
+
+              <div id="collapsetree" class="faq-section-bredh-text collapse" aria-labelledby="faqtree" data-parent="#faq">
+                <p>
+                  Untuk berlanganan layanan Dedicated, minimal berlanganan adalah 10 Mbps dan Deka tidak memberikan batas maksimal berlanganan.
+                  Batas kapasitas dapat berubah bila ada keterbatasan secara teknis atau ada kesepakatan lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <%- include('./partials/banner'); %>
   <%- include('./partials/footer'); %>
-
 
   <!-- jquery -->
   <script src="/js/jquery.min.js"></script>
@@ -49,12 +175,7 @@
   <!-- bootstrap offcanvas -->
   <script src="/js/bootstrap.offcanvas.min.js"></script>
   <!-- touchSwipe JavaScript -->
-  <script src="j/s/jquery.touchSwipe.min.js"></script>
-
-  <!-- seconde style additionel JavaScript -->
-  <script src="/js/particles-code.js"></script>
-  <script src="/js/particles.js"></script>
-  <script src="/js/smoothscroll.js"></script>
+  <script src="/js/jquery.touchSwipe.min.js"></script>
 </body>
 
 </html>
