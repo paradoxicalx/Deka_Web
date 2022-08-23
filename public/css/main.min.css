@@ -4648,7 +4648,7 @@ table.levels-of-managment-table.table-striped tbody tr:nth-of-type(odd) {
 .two-collomn-drop-down.dropdown .coodiv-menu-dropdown {
     right: 0;
     left: auto;
-    min-width: 650px !important;
+    /* min-width: 650px !important; */
 }
 .two-collomn-drop-down.dropdown .coodiv-dropdown-header .dropdown-item {
     padding: 0.35rem 3.5rem 0.35rem 0.9rem;
