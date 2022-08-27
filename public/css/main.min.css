@@ -4991,3 +4991,9 @@ a.mas-demo-btn:hover {
     padding: 2rem 1rem !important;
     box-shadow: none !important;
 }
+.section_text_graphic_image img {
+  border-radius: 20px 0 20px 0;
+}
+.mh-550 {
+  min-height: 550px !important; 
+}
