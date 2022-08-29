@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head', {page: 'Simulasi Layanan'}); %>
+</head>
+
+<body>
+
+<%- include('./partials/loading'); %>
+
+  <div id="coodiv-header" class="d-flex mx-auto flex-column moon-edition simple-sub-page">
+    <%- include('./partials/navigation', {color: 'dark'}); %>
+  </div>
+
+
+  <section class="bg-default-2 pt-30 pb-20">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-12 text-left">
+          <h1 class="coodiv-text-5 font-weight-bold mb-0">Simulasi Layanan Broadband</h1>
+          <p class="coodiv-text-9 font-weight-bold color-opacity-3">Pilih jumlah perangkat yang nantinya akan menggunakan akses internet</p>
+        </div>
+
+        <div class="col-lg-4 col-12">
+          <div id="monthly-yearly-chenge" class="style-two mb-0 mt-5">
+            <a class="active monthly-price"> <span class="change-box-text">Bulanan</span> <span class="change-box"></span></a>
+            <a class="yearli-price"><span class="change-box-text">Tahunan</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form form-user-per-server mt-md-15 mt-gl-25 mt-20">
+        <div class="form-group position-relative">
+          <div class="form-slider price' data-js-form-slider='true">
+            <input class="field" max="30" min="0" type="range" value="1">
+            <span class="fill"></span>
+            <span class="thumb users-container"><span class="users"></span></span>
+          </div>
+          <div class="slider-label how-much-users">
+            <span>0</span>
+            <span>5</span>
+            <span>10</span>
+            <span>15</span>
+            <span>20</span>
+            <span>25</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-start mt-18" style="min-height: 400px">
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-5" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">HOPE Lite</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.150.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.1.650.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 5 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/hope-lite">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-10" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">HOPE Home</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.200.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.2.200.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 10 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/hope-home">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-15" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">HOPE Play</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.250.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.2.750.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 15 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/hope-play">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-20" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">HOPE Office</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.300.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.3.300.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 20 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/hope-office">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-25" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">CONNEX 20</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.500.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.5.500.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 20 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/connex-20">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-40" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">CONNEX 40</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.1.000.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.11.000.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 40 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/connex-40">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 px-0 col-12 list-serv serv-60" style="display: none">
+          <div class="plans-slider-box">
+            <div class="coodiv-text-10 mb-3">CONNEX 60</div>
+            <div class="plans-slider-price-tag second-pricing-table-price monthly">
+              <div class="monthly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.1.500.000</span>
+                </span>
+              </div>
+              <div class="yearly thumb">
+                <span class="coodiv-text-4 font-weight-bold">
+                  <span>Rp.16.500.000</span>
+                </span>
+              </div>
+            </div>
+
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Kecepatan Up To 60 Mbps</li>
+              <li><i class="fas fa-check-circle"></i> UNLIMITED bandwidth</li>
+              <li><i class="fas fa-check-circle"></i> Tanpa Kuota / FUP</li>
+              <li><i class="fas fa-check-circle"></i> Dukungan 24/7</li>
+              <li><i class="fas fa-check-circle"></i> Private IP Address</li>
+            </ul>
+
+            <div class="d-flex justify-content-center plans-slider-order">
+              <a href="/subscribe/connex-60">Pilih Layanan</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <%- include('./partials/banner'); %>
+  <%- include('./partials/footer'); %>
+
+  <!-- jquery -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <!-- bootstrap JavaScript -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- template JavaScript -->
+  <script src="/js/template-scripts.js"></script>
+  <!-- flickity JavaScript -->
+  <script src="/js/flickity.pkgd.min.js"></script>
+  <!-- carousel JavaScript -->
+  <script src="/owlcarousel/owl.carousel.min.js"></script>
+  <!-- parallax JavaScript -->
+  <script src="/js/parallax.min.js"></script>
+  <!-- mailchamp JavaScript -->
+  <script src="/js/mailchamp.js"></script>
+  <!-- bootstrap offcanvas -->
+  <script src="/js/bootstrap.offcanvas.min.js"></script>
+  <!-- touchSwipe JavaScript -->
+  <script src="/js/jquery.touchSwipe.min.js"></script>
+
+  <!-- seconde style additionel JavaScript -->
+  <script src="/js/particles-code.js"></script>
+  <script src="/js/particles.js"></script>
+  <script src="/js/smoothscroll.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(generateService());
+
+    var service = [5, 10, 15, 20, 25, 40, 60]
+
+    function generateService() {
+      $("[data-js-form-slider]", function () {
+        const el = $(this)
+        const field = el.find('.field')
+        const fill = el.find('.fill')
+        const label = el.find('.thumb')
+        const min = field.attr('min') || 0
+        const max = field.attr('max') || 100
+
+        var value = field.val()
+        var fillVal = 100 * (value - min) / (max - min)
+        fill.css({"width": fillVal + "%"})
+        label.find('.users').text(" " + value + " ")
+        label.find('.users').css({"left": fillVal + "%"})
+
+        field.on('input', function () {
+          var value = field.val()
+          var fillVal = 100 * (value - min) / (max - min)
+
+          fill.css({"width": fillVal + "%"})
+          label.find('.users').css({"left": fillVal + "%"})
+          label.find('.users').text(" " + value + " ")
+
+          var mbps = value*2
+          var serv = 0
+
+          var serv = service.reduce(function(prev, curr) {
+            return (Math.abs(curr - mbps) < Math.abs(prev - mbps) ? curr : prev);
+          });
+
+          var idx = service.indexOf(serv)
+
+          var val1 = $('.serv-'+service[idx])
+          var val2 = $('.serv-'+service[idx+1])
+          var val3 = $('.serv-'+service[idx+2])
+          var val4 = $('.serv-'+service[idx+3])
+
+          var curserv = service.sort( (a, b) => Math.abs(mbps - a) - Math.abs(mbps - b) )[0];
+          $('.plans-slider-box').removeClass('active')
+          $('.serv-'+curserv).find('.plans-slider-box').addClass('active')
+
+          $('.list-serv').hide()
+          val1.show()
+          val2.show()
+          val3.show()
+          val4.show()
+
+          if (mbps < 1) {
+            $('.list-serv').hide()
+          }
+
+        })
+
+      })
+    }
+
+  </script>
+</body>
+
+</html>

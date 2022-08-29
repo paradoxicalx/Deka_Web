@@ -74,11 +74,9 @@
     </main>
   </div>
 
-
-
   <div id="mobile-form-contact-height"></div>
-  <section class="padding-20-0 mob-display-none" style="min-height: 400px">
-    <div class="container">
+  <section class="padding-20-0" style="min-height: 400px">
+    <div class="container mob-display-none">
       <div class="row justify-content-start">
         <div class="col-md-5">
           <h5 class="immediate-help-center-title">Atau hubungi Deka melalui <br> Whatsapp atau Email?</h5>
@@ -180,5 +178,41 @@
   <script src="/js/particles-code.js"></script>
   <script src="/js/particles.js"></script>
   <script src="/js/smoothscroll.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="text/javascript">
+    $("form").submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(this);
+      $.ajax({
+        type        : "POST",
+        url         : $(this).attr('action'),
+        mimeType    : 'multipart/form-data',
+        data        : formData,
+        cache       : false,
+        processData : false,
+        contentType : false,
+        success     : function(data) {
+          var data = JSON.parse(data)
+          if (data.status) {
+            $('input, textarea').val('')
+            Swal.fire({
+              icon: 'success',
+              title: 'BERHASIL',
+              text: 'Pesan Terkirim!',
+            })
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Pesan gagal mengirim pesan',
+            })
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {}
+      });
+    })
+  </script>
+
 </body>
 </html>

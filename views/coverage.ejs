@@ -65,8 +65,41 @@
   <script src="/js/leaflet-elevation.js"></script>
   <script src="/js/geoutils.js"></script>
   <script src="/js/Leaflet.PolylineMeasure.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script type="text/javascript">
+    $("form").submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(this);
+      $.ajax({
+        type        : "POST",
+        url         : $(this).attr('action'),
+        mimeType    : 'multipart/form-data',
+        data        : formData,
+        cache       : false,
+        processData : false,
+        contentType : false,
+        success     : function(data) {
+          var data = JSON.parse(data)
+          if (data.status) {
+            $('input, textarea').val('')
+            Swal.fire({
+              icon: 'success',
+              title: 'BERHASIL',
+              text: 'Kami akan segera mengirim informasi ketersediaan jaringan melalui whatsapp',
+            })
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Gagal mengirim',
+            })
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {}
+      });
+    })
+
     var myIcon  = L.icon({
       iconUrl: '/img/images/orange.png',
       iconSize:     [30, 41],

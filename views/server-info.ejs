@@ -26,7 +26,7 @@
       <div class="row">
         <div class="col-md-12 help-center-header">
           <h5 class="help-center-title">Jadwal dan Informasi Jaringan</h5>
-          <p class="help-center-text">Berikut ini adalah information berkaitan dengan status jaringan Deka bulan Agustus 2022.</p>
+          <p class="help-center-text">Berikut ini adalah information berkaitan dengan status jaringan Deka bulan <span id="date-server"></span>.</p>
         </div>
       </div>
     </div>
@@ -38,36 +38,31 @@
 
       <div class="time-line-status">
 
-        <div class="tt-time-status">
-          <div class="row justify-content-center">
-            <div class="col-md-2">
-              <span class="title-status error">GANGGUAN</span>
-            </div>
-            <div class="col-md-10">
-              <h5 class="title-status-h5">Gangguan Jaringan <span>Senin, 12 Agustus 2022</span></h5>
-              <p class="title-status-p mb-0 mt-8">Terjadi masalah kelistrikan pada salah satu BTS Deka. Berdampak pada terputusnya koneksi untuk beberapa pelanggan</p>
-              <hr>
-            </div>
-            <div class="status-div-optionel non">
-              <p><b>BTS</b> Perbaikan dan penambahan backup kelistrikan pada BTS terdampak. <span>Menunggu <i class="fa fa-circle-o-notch" aria-hidden="true"></i></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="tt-time-status">
-          <div class="row justify-content-center">
-            <div class="col-md-2">
-              <span class="title-status">PERBAIKAN</span>
-            </div>
-            <div class="col-md-10">
-              <h5 class="title-status-h5">Perawatan Jaringan <span>Minggu, 11 Agustus 2022</span></h5>
-              <p class="title-status-p mb-0 mt-8">Pekerjaan ini memiliki kemungkinan kecil untuk mengganggu koneksi internet pelanggan. </p>
-              <hr>
-            </div>
-            <div class="status-div-optionel chck">
-              <p><b>Server</b> Penggantian perangkat pada server utama Deka. <span>Selesai <i class="fa fa-circle-o-notch" aria-hidden="true"></i></span></p>
+        <% if(Object.keys(info).length > 0) { %>
+        <% for (var i = 0; i < info.length; i++) { %>
+          <div class="tt-time-status">
+            <div class="row justify-content-center">
+              <div class="col-md-2">
+                <span class="title-status error"><%= info[i].type %></span>
+              </div>
+              <div class="col-md-10">
+                <h5 class="title-status-h5"><%= info[i].title %> <span><%= info[i].date %></span></h5>
+                <p class="title-status-p mb-0 mt-8"><%= info[i].description %></p>
+                <hr>
+              </div>
+              <div class="status-div-optionel <%= (info[i].status == 'selesai') ? 'chck' : 'non' %>">
+                <p><b><%= info[i].location %></b> <%= info[i].action %>. <span><%= info[i].status %> <i class="fa fa-circle-o-notch" aria-hidden="true"></i></span></p>
+              </div>
             </div>
           </div>
-        </div>
+        <% } %>
+        <% } else { %>
+          <div class="text-center">
+            <i class="fa-3x fas fa-robot mb-4"></i>
+            <h5>Informasi Tidak Tersedia</h5>
+            <small>tidak ada gangguan atau jadwal perbaikan / perawatan</small>
+          </div>
+        <% } %>
 
       </div>
 
@@ -99,6 +94,12 @@
   <script src="/js/bootstrap.offcanvas.min.js"></script>
   <!-- touchSwipe JavaScript -->
   <script src="/js/jquery.touchSwipe.min.js"></script>
+  <script src="/js/moment.js"></script>
+
+  <script type="text/javascript">
+    var dateserver = moment().format('MMMM YYYY')
+    $('#date-server').text(dateserver)
+  </script>
 </body>
 
 </html>

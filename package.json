@@ -23,12 +23,16 @@
     "express-fileupload": "^1.2.0",
     "express-session": "^1.17.1",
     "fs": "0.0.1-security",
+    "greenlock-express": "^4.0.3",
     "html-to-text": "^6.0.0",
+    "http-proxy": "^1.18.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.20",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "request": "^2.88.2",
     "sharp": "^0.30.7",
+    "socket.io": "^4.5.1",
     "unzipper": "^0.10.11"
   }
 }

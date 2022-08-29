@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+  <url>
+    <loc>https://deka.net.id/</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/service/hope</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/service/connex</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/service/dedicated</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/server-info</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/asked</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/send-messages</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/coverage</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/simulasi</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/bod</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/partnership</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/confirm-payment</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/privacy</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://deka.net.id/contact</loc>
+    <lastmod>2022-08-29T00:02:28+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+
+</urlset>

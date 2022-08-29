@@ -77,8 +77,8 @@
 
 
   <div id="mobile-form-contact-height"></div>
-  <section class="padding-20-0 mob-display-none" style="min-height: 600px">
-    <div class="container">
+  <section class="padding-20-0" style="min-height: 600px">
+    <div class="container mob-display-none">
       <div class="row justify-content-start">
         <div class="col-md-5">
           <h5 class="immediate-help-center-title">Atau Konfirmasi Langsung <br> Melalui Whatsapp atau Email</h5>
@@ -88,10 +88,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section>
-    asd
   </section>
 
 
@@ -123,12 +119,45 @@
   <script src="/js/particles-code.js"></script>
   <script src="/js/particles.js"></script>
   <script src="/js/smoothscroll.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script type="text/javascript">
     $(".custom-file-input").on("change", function() {
       var fileName = $(this).val().split("\\").pop();
       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
+
+    $("form").submit(function(e) {
+      e.preventDefault();
+      var formData = new FormData(this);
+      $.ajax({
+        type        : "POST",
+        url         : $(this).attr('action'),
+        mimeType    : 'multipart/form-data',
+        data        : formData,
+        cache       : false,
+        processData : false,
+        contentType : false,
+        success     : function(data) {
+          var data = JSON.parse(data)
+          if (data.status) {
+            $('input, textarea').val('')
+            Swal.fire({
+              icon: 'success',
+              title: 'BERHASIL',
+              text: 'Pesan Konfirmasi Terkirim!',
+            })
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Pesan gagal mengirim pesan konfirmasi',
+            })
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {}
+      });
+    })
   </script>
 </body>
 </html>
