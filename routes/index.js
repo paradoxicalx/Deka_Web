@@ -5,8 +5,10 @@ const fs          = require('fs')
 const path        = require('path');
 const mime        = require('mime');
 const request     = require('request');
+var querystring   = require('querystring');
 
 const appspage    = 'https://apps.deka.net.id/'
+// const appspage    = 'http://127.0.0.1:8080/'
 
 module.exports = function(app) {
   app.get('/', async function(req, res) {
@@ -33,17 +35,23 @@ module.exports = function(app) {
   app.post('/send-messages', async function(req, res) {
     var data = req.body
 
-    request.post(
-      appspage+'web/messages',
-      data,
-      function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          res.json({status: true})
-        } else {
-          res.json({status: false})
-        }
+    var formData = querystring.stringify(data);
+    var contentLength = formData.length;
+    request({
+      headers: {
+        'Content-Length': contentLength,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      uri: appspage+'api/ask/sendmessage',
+      body: formData,
+      method: 'POST'
+    }, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json({status: true})
+      } else {
+        res.json({status: false})
       }
-    );
+    });
 
   });
 
@@ -80,17 +88,24 @@ module.exports = function(app) {
   app.post('/confirm-payment', async function(req, res) {
     var data = req.body
 
-    request.post(
-      appspage+'web/confirm-payment',
-      data,
-      function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          res.json({status: true})
-        } else {
-          res.json({status: false})
-        }
+    var formData = querystring.stringify(data);
+    var contentLength = formData.length;
+    request({
+      headers: {
+        'Content-Length': contentLength,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      uri: appspage+'api/ask/confirm_payment',
+      body: formData,
+      method: 'POST'
+    }, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json({status: true})
+      } else {
+        res.json({status: false})
       }
-    );
+    });
+
   });
 
   app.get('/contact', async function(req, res) {
@@ -123,18 +138,24 @@ module.exports = function(app) {
 
   app.post('/check-coverage', async function(req, res) {
     var data = req.body
-    
-    request.post(
-      appspage+'web/coverage',
-      data,
-      function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          res.json({status: true})
-        } else {
-          res.json({status: false})
-        }
+
+    var formData = querystring.stringify(data);
+    var contentLength = formData.length;
+    request({
+      headers: {
+        'Content-Length': contentLength,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      uri: appspage+'api/ask/coverage',
+      body: formData,
+      method: 'POST'
+    }, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        res.json({status: true})
+      } else {
+        res.json({status: false})
       }
-    );
+    });
   });
 
 
